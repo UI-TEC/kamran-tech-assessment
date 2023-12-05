@@ -1,0 +1,23 @@
+{
+  "name": "kamran-tech-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build-all": "npm run css-build && npm run js-build",
+    "css-build": "sass --no-source-map src/sass/main.scss public/css/main.min.css --style compressed",
+    "js-build": "mkdir -p public/js && npx uglify-js src/js/main.js -o public/js/main.min.js",
+    "css-watch": "npm run build -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.2",
+    "sass": "^1.69.5",
+    "uglify-js": "^3.17.4"
+  }
+}

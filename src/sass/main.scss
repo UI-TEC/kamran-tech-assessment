@@ -1,0 +1,14 @@
+// Include all default variables, typography and grid
+@import 'base/reset';
+@import 'base/grid';
+@import 'base/variables';
+@import 'base/typography';
+
+
+
+// Include all components
+@import 'components/menu';
+@import 'components/header';
+@import 'components/footer';
+
+
